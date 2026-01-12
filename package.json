@@ -1,17 +1,18 @@
 {
-  "name": "oxrun",
+  "name": "@hairy/oxrun",
   "type": "module",
   "version": "0.2.6",
+  "packageManager": "pnpm@10.27.0",
   "description": "Typescript node runtime powered by oxc-node",
-  "author": "tmg0",
+  "author": "hairy",
   "license": "MIT",
-  "homepage": "https://github.com/tmg0/oxrun#readme",
+  "homepage": "https://github.com/hairy/oxrun#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tmg0/oxrun.git"
+    "url": "git+https://github.com/hairy/oxrun.git"
   },
   "bugs": {
-    "url": "https://github.com/tmg0/oxrun/issues"
+    "url": "https://github.com/hairy/oxrun/issues"
   },
   "keywords": [
     "oxc",
@@ -37,7 +38,7 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@oxc-node/core": "^0.0.15",
+    "@oxc-node/core": "^0.0.35",
     "chokidar": "^4.0.1",
     "destr": "^2.0.3",
     "execa": "^9.4.0",
