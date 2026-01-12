@@ -36,6 +36,14 @@ pnpm add oxrun -D
 }
 ```
 
+### `Watch`
+
+oxrun supports watch mode with `watch` and this will automatically re-run your script whenever any of files under root dir changed.
+
+```bash
+npx oxrun watch hello.ts
+```
+
 ### `Programmatic`
 
 ```ts
@@ -73,19 +81,25 @@ export async function resolveNuxliteConfig() {
 
 ## Props
 
-### `props.watch`
+### `props.include`
 
-- Type: `false | string`
+- Type: `string` | `string[]`
 - Default: `false`
-
-Oxrun supports watch mode with `--watch` and this will automatically re-run your script whenever any of files under root dir changed.
 
 Watch can be a boolean or string (Can be set to a string of the path), empty string `''` will be parse as a truthy value like `true`.
 
-### `props.ignore`
+```sh
+oxrun watch hello.ts --include ./other-dep.txt --include "./other-deps/*"
+```
+
+### `props.exclude`
 
 - Type: `string`
 - Default: `undefined`
+
+```sh
+oxrun watch hello.ts --exclude ./**/*.test.js
+```
 
 ## Benchmark
 
