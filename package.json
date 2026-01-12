@@ -6,6 +6,9 @@
   "description": "Typescript node runtime powered by oxc-node",
   "author": "hairy",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "homepage": "https://github.com/hairy/oxrun#readme",
   "repository": {
     "type": "git",
