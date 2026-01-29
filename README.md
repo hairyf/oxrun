@@ -19,13 +19,13 @@
 ### `CLI`
 
 ```bash
-npx oxrun hello.ts
+npx -p @hairy/oxrun oxrun hello.ts
 ```
 
 or install as dependency
 
 ```bash
-pnpm add oxrun -D
+pnpm add @hairy/oxrun -D
 ```
 
 ```json
@@ -41,7 +41,7 @@ pnpm add oxrun -D
 oxrun supports watch mode with `watch` and this will automatically re-run your script whenever any of files under root dir changed.
 
 ```bash
-npx oxrun watch hello.ts
+npx -p @hairy/oxrun oxrun watch hello.ts
 ```
 
 ### `Programmatic`
@@ -55,7 +55,7 @@ export default msg
 
 ```js
 // entry.js
-import oxrun from 'oxrun'
+import oxrun from '@hairy/oxrun'
 
 (async () => {
   await oxrun('./hello.ts') // output: hello
