@@ -9,13 +9,13 @@
   "publishConfig": {
     "access": "public"
   },
-  "homepage": "https://github.com/hairy/oxrun#readme",
+  "homepage": "https://github.com/hairyf/oxrun#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hairy/oxrun.git"
+    "url": "git+https://github.com/hairyf/oxrun.git"
   },
   "bugs": {
-    "url": "https://github.com/hairy/oxrun/issues"
+    "url": "https://github.com/hairyf/oxrun/issues"
   },
   "keywords": [
     "oxc",
